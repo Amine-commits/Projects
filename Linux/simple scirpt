@@ -1,0 +1,10 @@
+#!/bin/bash
+#pretty understandable tbh
+output_file="testresult.txt"
+echo "simple script showing ram usage and other infos"  > $output_file
+echo "------------------------------------------------" >> $output_file
+whoami >> $output_file
+echo "------------------------------------------------" >> $output_file
+date >> $output_file
+echo "------------------------------------------------" >> $output_file
+free -h >> $output_file
