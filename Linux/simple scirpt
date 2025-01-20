@@ -1,5 +1,6 @@
 #!/bin/bash
 #pretty understandable tbh
+# >> needs to be used to not overwrite, instead it added the ligne
 output_file="testresult.txt"
 echo "simple script showing ram usage and other infos"  > $output_file
 echo "------------------------------------------------" >> $output_file
