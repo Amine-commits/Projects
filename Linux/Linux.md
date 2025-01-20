@@ -1,9 +1,13 @@
 **Common system commands
 
 how to get your current username : whoami
+
 how to get your distribution's name : cat /etc/*-release
+
 Get your current working directory Get your system's date and time : date
+
 Get your system's free ram Check processes : *cat /proc/meminfo / in real time use *free
+
 Use man, info and --help to get more info on any linux command
 
 **File system basics
