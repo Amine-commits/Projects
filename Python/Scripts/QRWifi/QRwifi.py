@@ -1,7 +1,15 @@
 from pathlib import Path
-# if not done yet, install qrcode module with pip install qrcode
+from dotenv import load_dotenv
+import os
 
-import qrcode # Import the qrcode module
-qr=qrcode.make("SSID : Keepitsafemain      "   "+"   "     Pass:BruteF0rceThisShit@@") # Create a QR code
-qr.save("C:/Users/bc-am/Pictures/QRWifi.png") # Save the QR code as a PNG file
-print("QR code saved as QRWifi.png") # Print a message to the console
+load_dotenv()
+
+save_path = Path(os.getenv("QR_SAVE_PATH"))
+
+import qrcode
+
+qr=qrcode.make("SSID:Keepitsafemain And Pass : BruteF0rceThisShit@@")
+
+qr.save("QRWifi.png")
+
+print("QR code saved as QRWifi.png") 
